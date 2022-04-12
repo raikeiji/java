@@ -47,6 +47,14 @@ class Mahasiswa{
         System.out.println("IPK  : " + this.IPK);
     }
 
+    // method without return and with parameter
+
+    void setName(String name){
+
+        this.nama = name;
+
+    }
+
 }
 
 public class Main {
@@ -88,6 +96,11 @@ public class Main {
         // run method without return and without parameter
 
         Mahasiswa m4 = new Mahasiswa("Ayu", "623482323", 32, 4.00);
+        m4.showData();
+
+        // run method without return and with parameter
+
+        m4.setName("Lukita");
         m4.showData();
     }
 
