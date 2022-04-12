@@ -31,7 +31,13 @@ class Mahasiswa{
         System.out.println(umur);
         System.out.println(IPK);
 
+        // called method static
+
+        Main.testing();
+
     }
+
+    
 
 }
 
@@ -66,5 +72,15 @@ public class Main {
 
         Mahasiswa m3 = new Mahasiswa("Engel", "1234445", 45, 4.00);
 
-    }    
+
+        // run method static
+
+        testing();
+    }
+
+    // method static example
+
+    static void testing(){
+        System.out.println("method static example");
+    }
 }
