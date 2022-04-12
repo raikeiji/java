@@ -81,6 +81,14 @@ class Mahasiswa{
 
     }
 
+
+    // method with return and with parameter
+
+    String messageFromStudent(String message){
+
+        return message +" "+ this.nama;
+    }
+
 }
 
 public class Main {
@@ -135,6 +143,12 @@ public class Main {
         System.out.println(m4.getNIM());
         System.out.println(m4.getUmur());
         System.out.println(m4.getIPK());
+
+        // run method with return and with parameter
+
+        String messages = m4.messageFromStudent("Thanks for calling me!");
+
+        System.out.println(messages);
     }
 
     // method static example
