@@ -21,10 +21,10 @@ class Mahasiswa{
 
     Mahasiswa(String namaMahasiswa, String NIMMahasiswa, int umurMahasiswa, double IPKMahasiswa){
 
-        nama = namaMahasiswa;
-        NIM = NIMMahasiswa;
-        umur = umurMahasiswa;
-        IPK = IPKMahasiswa;
+        this.nama = namaMahasiswa;
+        this.NIM = NIMMahasiswa;
+        this.umur = umurMahasiswa;
+        this.IPK = IPKMahasiswa;
 
         System.out.println(nama);
         System.out.println(NIM);
@@ -37,7 +37,15 @@ class Mahasiswa{
 
     }
 
-    
+    // method without return and without parameter
+
+    void showData(){
+
+        System.out.println("Nama : " + this.nama);
+        System.out.println("NIM  : " + this.NIM);
+        System.out.println("Umur : " + this.umur);
+        System.out.println("IPK  : " + this.IPK);
+    }
 
 }
 
@@ -76,6 +84,11 @@ public class Main {
         // run method static
 
         testing();
+
+        // run method without return and without parameter
+
+        Mahasiswa m4 = new Mahasiswa("Ayu", "623482323", 32, 4.00);
+        m4.showData();
     }
 
     // method static example
