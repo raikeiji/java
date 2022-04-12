@@ -55,6 +55,32 @@ class Mahasiswa{
 
     }
 
+    // method with return and without parameter
+
+    String getName(){
+        
+        return this.nama;
+
+    }
+
+    String getNIM(){
+
+        return this.NIM;
+
+    }
+
+    int getUmur(){
+
+        return this.umur;
+
+    }
+
+    double getIPK(){
+
+        return this.IPK;
+
+    }
+
 }
 
 public class Main {
@@ -102,6 +128,13 @@ public class Main {
 
         m4.setName("Lukita");
         m4.showData();
+
+        // run method with return and withour parameter
+
+        System.out.println(m4.getName());
+        System.out.println(m4.getNIM());
+        System.out.println(m4.getUmur());
+        System.out.println(m4.getIPK());
     }
 
     // method static example
