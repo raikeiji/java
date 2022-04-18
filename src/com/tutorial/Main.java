@@ -12,9 +12,7 @@ class Mahasiswa{
     // Constructur, first object called in first code running
 
     Mahasiswa(){
-
         System.out.println("constructor example");
-
     }
 
     // Constructor with parameter
@@ -40,7 +38,6 @@ class Mahasiswa{
     // method without return and without parameter
 
     void showData(){
-
         System.out.println("Nama : " + this.nama);
         System.out.println("NIM  : " + this.NIM);
         System.out.println("Umur : " + this.umur);
@@ -50,42 +47,31 @@ class Mahasiswa{
     // method without return and with parameter
 
     void setName(String name){
-
         this.nama = name;
-
     }
 
     // method with return and without parameter
 
-    String getName(){
-        
+    String getName(){ 
         return this.nama;
-
     }
 
     String getNIM(){
-
         return this.NIM;
-
     }
 
     int getUmur(){
-
         return this.umur;
-
     }
 
     double getIPK(){
-
         return this.IPK;
-
     }
 
 
     // method with return and with parameter
 
     String messageFromStudent(String message){
-
         return message +" "+ this.nama;
     }
 
@@ -121,7 +107,6 @@ public class Main {
         // Construction running example
 
         Mahasiswa m3 = new Mahasiswa("Engel", "1234445", 45, 4.00);
-
 
         // run method static
 
