@@ -1,4 +1,4 @@
-package com.tutorial;
+package com.basic;
 
 import java.net.SocketTimeoutException;
 
