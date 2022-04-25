@@ -1,4 +1,6 @@
-package com.settergetterexercise;
+// reference : https://github.com/kelasterbuka/JAVA_Lanjut_OOP/blob/master/11%20-%20Latihan%20Encapsulasi%20Part%201/src/com/tutorial/Main.java
+
+package com.settergetterexercise1;
 
 class Player{
     private String name;
