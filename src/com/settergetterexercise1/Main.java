@@ -98,3 +98,4 @@ public class Main{
         player1.display();
         player2.display();
     }
+}
