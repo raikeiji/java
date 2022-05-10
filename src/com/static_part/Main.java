@@ -1,12 +1,25 @@
 package com.static_part;
 
+import java.util.ArrayList;
+
 class Mahasiswa{
 
-    public static String namaMahasiswa = "Ari";
+    // static attribute
+    public static String namaMahasiswa;
+    static String mataKuliah;
+    
+    // static Arraylist attribute
+    
+    public static ArrayList<String> listMataKuliah = new ArrayList<String>();
+    public static ArrayList<String> listNamaMahasiwa = new ArrayList<String>();
 
-    Mahasiswa(String namaMahasiwa){
+    Mahasiswa(String namaMahasiwa, String mataKuliah){
 
         this.namaMahasiswa = namaMahasiwa;
+        this.mataKuliah = mataKuliah;
+        // adding value in mataKuliah attribut with data String
+        Mahasiswa.listMataKuliah.add(this.mataKuliah);
+        Mahasiswa.listNamaMahasiwa.add(this.namaMahasiswa);
 
     }
 
@@ -14,17 +27,33 @@ class Mahasiswa{
         System.out.println("Nama Mahasiswa : " + this.namaMahasiswa);
     }
 
+    void setMataKuliah(String mataKuliah){
+        this.mataKuliah = mataKuliah;
+    }
+
+    // make static method
+
+    static ArrayList<String> getMataKuliahList(){
+        return Mahasiswa.listMataKuliah;
+    }
+
+    static ArrayList<String> getNamaMahasiswaList(){
+        return Mahasiswa.listNamaMahasiwa;
+    }
+
 }
 public class Main{
 
     public static void main(String[] args) {
 
-        // menampilkan nama mahasiswa menggunakan kelas static
-        System.out.println(Mahasiswa.namaMahasiswa);
+        Mahasiswa mahasiswa1 = new Mahasiswa("Budi", "Statistic");
+        Mahasiswa mahasiswa2 = new Mahasiswa("Agus", "Pramuka");
+        Mahasiswa mahasiswa3 = new Mahasiswa("Engel", "Math");
 
-        // menampilkan nama mahasiwa menggunakan objek mahasiswa
+        // call getMataKuliahJurusan
 
-        Mahasiswa mahasiswa = new Mahasiswa("Budi");
-        System.out.println("Nama Mahasiswa : " + mahasiswa.namaMahasiswa);
+        System.out.println("Semua matakuliah = " + Mahasiswa.getMataKuliahList());
+
+        System.out.println("Semua nama mahasiswa = " + Mahasiswa.getNamaMahasiswaList());
     }
 }
