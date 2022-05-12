@@ -4,6 +4,10 @@ public class Mahasiswa {
     
     String namaMahasiswa;
 
+    Mahasiswa(){
+
+    }
+    
     Mahasiswa(String namaMahasiswa){
         this.namaMahasiswa = namaMahasiswa;
     }

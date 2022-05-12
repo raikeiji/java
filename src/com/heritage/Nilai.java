@@ -2,14 +2,14 @@ package com.heritage;
 
 public class Nilai extends Mahasiswa {
     
-    String nilaimah;
-    Mahasiswa mahasiwa;
-
-    Nilai(String nilaimah){
+    int nilaimah;
+    
+    Nilai(int nilaimah){
+        super();
         this.nilaimah = nilaimah;
     }
 
-    void getNamaMahsiwa(){
-        System.out.println("Nama Mahasiswa adalah " + mahasiwa.namaMahasiswa);
+    void getNilai(){
+        System.out.println("Nilai Mahasiswa = " + nilaimah);
     }
 }
