@@ -10,6 +10,9 @@ public abstract class Shape {
         this.shape = shape;
     }
 
+    // abstract method
+    public abstract void luas();
+
     void display(){
         System.out.println("Ukuran =  " + this.shape);
     }
