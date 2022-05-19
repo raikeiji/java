@@ -15,5 +15,14 @@ public class Main {
         System.out.println("Tinggi = " + luas.getTinggi());
 
         luas.luas();
+
+
+        // Persegi
+
+        Persegi persegi = new Persegi(4, 5);
+        System.out.println("Panjang : " + persegi.getPanjang());
+        System.out.println("Lebar : " + persegi.getLebar());
+        // System.out.println("Luas : " persegi.getLebar() * persegi.getPanjang());
+        persegi.luas();
     }
 }

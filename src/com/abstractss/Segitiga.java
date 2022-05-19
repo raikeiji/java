@@ -3,19 +3,19 @@ package com.abstractss;
 public class Segitiga extends Shape{
     
     String shape;
-    int alas, tinggi;
+    
 
     Segitiga(String shape){
         this.shape = shape;
     }
 
     Segitiga(int alas, int tinggi){
-        this.alas = alas;
-        this.tinggi = tinggi;
+        super.alas = alas;
+        super.tinggi = tinggi;
     }
 
     @Override
-    void display(){
+    public void display(){
         System.out.println("Ukuran =  " + this.shape);
     }
 
